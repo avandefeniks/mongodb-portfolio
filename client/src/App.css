@@ -1,4 +1,300 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #fafafa;
+  --dark: #000000;
+}
+
+main {
+	margin: 0 auto;
+	max-width: 90%;
+  padding: 50px 30px;
+}
+
+body {
+  width: 98%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--light);
+  background: var(--dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  margin: 5px 0;
+  line-height: 1.25;
+  padding: 10px;
+}
+
+header {
+  font-family: 'Poiret One', cursive;
+  height: 110px;
+  background-image: linear-gradient(to right, rgb(54, 54, 58), rgb(8, 8, 8));
+}
+
+.angel {
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+  color: var(--light);
+  
+}
+
+a:hover {
+  color: var(--light);
+  text-decoration: none;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 25px;
+}
+
+header nav ul li {
+  padding: 10px 20px;
+}
+
+.angel-image {
+  padding: 10px;
+}
+
+.about-me {
+  padding: 10px;
+}
+
+.about-me-text {
+  padding-left: 35px;
+}
+
+.contact-form {
+  padding-left: 50px;
+}
+
+.contact-list{
+  list-style: none;
+  font-size: 20px;
+}
+
+.contact-list li {
+  padding: 10px 20px;
+}
+
+.contact-list li a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--light);
+}
+
+.div-contact-me {
+  font-family: 'Poiret One', cursive;
+  height: 60px;
+  background-image: linear-gradient(to right, rgb(54, 54, 58), rgb(8, 8, 8));
+  margin-top: 20px;
+}
+
+.div-resume {
+  padding-left: 50px;
+}
+
+.resume-list {
+  list-style: none;
+}
+
+.navActive {
+  color: rgb(97, 97, 97);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.card {
+  background-color: white;
+  border-radius: 2px;
+  /* height: 525px; */
+  margin: 1rem;
+  position: relative;
+  width: 325px;
+  box-shadow: 0 3px 6px #999, 0 3px 6px #999;
+  text-align: left;
+}
+
+.card > .img-container {
+  height: 50%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+.card > .img-container > img {
+  width: 100%;
+  padding: 25px;
+  background-color: white;
+}
+
+.card > .content {
+  padding-right: 1rem;
+  font-size: 18px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
+
+.card > .content > ul {
+  list-style-type: none;
+  background-color: white;
+}
+
+.card > .content > ul > li {
+  margin-top: 18px;
+  background-color: white;
+}
+
+.wrapper {
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+}
+
+
+.icon {
+  padding: 10px;
+}
+
+.project-title {
+  background-color: white;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+
+}
+
+h6 a {
+  text-decoration: none;
+  color: rgb(117, 116, 116);
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  .footer {
+    position: relative;
+    bottom: 0; 
+  }
+
+  .div-contact-me {
+    /* font-size: 15px; */
+    height: 60px;
+    text-align: center;
+  }
+
+  .contact-list {
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-list li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header nav ul {
+    /* list-style: none; */
+    font-size: 15px;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  .footer {
+    position: relative;
+    bottom: 0;
+  }
+
+  .div-contact-me {
+    /* font-size: 15px; */
+    height: 60px;
+    text-align: center;
+  }
+
+  .contact-list {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-list li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header nav ul {
+    /* list-style: none; */
+    font-size: 20px;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .nav-list li {
+    font-size: 15px;
+  }
+  .div-contact-me {
+    /* font-size: 15px; */
+    height: 90px;
+    text-align: center;
+  }
+
+  .contact-list {
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact-list li {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .footer {
+    position: relative; 
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header nav ul {
+    /* list-style: none; */
+    font-size: 15px;
+  }
+}
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +331,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

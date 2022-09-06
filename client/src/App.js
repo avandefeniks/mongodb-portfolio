@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './components/Header';
+import About from './components/About';
+import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+import Resume from './components/Resume';
+import Projects from './components/Projects';
 
 function App() {
+  const [componentSelected, setComponentSelected] = useState('about');
+
+
+  function renderPage() {
+    if (componentSelected === 'about') {
+      return <About />
+    }
+    else if (componentSelected === 'contact') {
+      return <ContactForm />
+    }
+    else if (componentSelected === 'projects') {
+      return <Projects />
+    }
+    else if (componentSelected === 'resume') {
+      return <Resume />
+    }
+    
+  }
+
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header setpage={setComponentSelected}/>
+      {renderPage()}
+      <Footer />
     </div>
   );
 }

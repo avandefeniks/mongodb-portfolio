@@ -23,7 +23,6 @@ function About() {
                     the client. I work well in a cross-functional, diverse team-oriented and collaborative environment.
                 </p>
             </div>
-            
         </div>
 
     );

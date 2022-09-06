@@ -1,0 +1,48 @@
+[
+    {
+        "id": 1,
+        "name": "Purly",
+        "image": "./images/Purly.jpg",
+        "github": "https://github.com/hectorromo06/purly",
+        "url": "https://purly.herokuapp.com/",
+        "description": "This is a collabrative application that was done by myself and 5 other students from my coding bootcamp. The application is for people who are into knitting at all skill levels allowing them to find patterns for their projects and add new ones. I created the models, queries, mutations and the 'Add Pattern' react form.",
+        "languages": "MongoDB | Mongoose | GraphQL | React | Express.js | Node.js | UIkit | CSS | HTML"
+    },
+    {
+        "id": 2,
+        "name": "My Garden Planner",
+        "image": "./images/MyGardenPlannerHero.jpg",
+        "github": "https://github.com/ptran77/garden-planner",
+        "url": "https://garden-planner-90482.herokuapp.com/",
+        "description": "This was a collaborative project that myself and three other classmates worked on from my Coding Bootcamp. The site we developed is dedicated to those seeking to learn about gardening. I created the models, the 'Single Fruit/Vegetable' page and the 'Add Fruit/Vegetable' form.",
+        "languages": "MySQL | Sequelize ODM | Node.js | Express.js | .env | Handlebars | Tailwind CSS | HTML | CSS"
+    },
+    {
+        "id": 3,
+        "name": "Tune Blast",
+        "image": "./images/TuneBlastHero.jpg",
+        "github": "https://github.com/mpeterson56/Tune-Blast",
+        "url": "https://mpeterson56.github.io/Tune-Blast/?",
+        "description": "This was a collaborative project that myself and one other classmate worked on from my Coding Bootcamp. The appllication allows you to look up lyrics from your favorite band's songs. I handled all of the JavaScript programming for the application.",
+        "languages": "JavaScript | UIkit | HTML | CSS"
+    },
+    {
+        "id": 4,
+        "name": "Team Profile Generator",
+        "image": "./images/TeamProfile.jpg",
+        "github": "https://github.com/avandefeniks/team-profile-generator",
+        "url": "https://github.com/avandefeniks/team-profile-generator/blob/main/README.md",
+        "description": "This is a CLI application that allows a person to enter in information about a company's employees. It produces an HTML page that shows the hirearchy of employees similar to an organization chart",
+        "languages": "Node.js | Inquirer | JavaScript | Bootstrap | CSS | HTML"
+    },
+    {
+        "id": 5,
+        "name": "Weather Dashboard",
+        "image": "./images/WeatherDashboardHero.jpg",
+        "github": "https://github.com/avandefeniks/weather-dashboard",
+        "url": "https://avandefeniks.github.io/weather-dashboard/",
+        "description": "This is an application that shows the current weather, 5-day forcast and UV Index by city. Search history is persistant utilizing local storage",
+        "languages": "JavaScript | Bootstrap | CSS | HTML"
+    }
+    
+]
